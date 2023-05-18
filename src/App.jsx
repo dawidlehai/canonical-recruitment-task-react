@@ -1,3 +1,9 @@
+import Card from "./components/Card";
+
 export default function App() {
-  return <p>Hello</p>;
+  return (
+    <div className="test">
+      <Card />
+    </div>
+  );
 }
