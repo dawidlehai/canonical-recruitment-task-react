@@ -12,23 +12,25 @@ export default function Card({ article }) {
     <div className="col-4">
       <div className="p-card--highlighted article-card">
         <div className="p-card__content">
-          <p>{article.category}</p>
-          <hr className="dotted" />
+          <p className="p-text--small-caps article-card__category">
+            {article.category}
+          </p>
+          <hr className="hr-dotted" />
           <img
-            className="p-card__image"
+            className="p-card__image article-card__image"
             alt={article.title}
             src={article.image}
-            width="330"
-            height="185"
+            width="354"
+            height="199"
           />
-          <h2 className="p-heading--4">
+          <h2 className="p-heading--4 article-card__heading">
             <a href={article.link}>{article.title}</a>
           </h2>
-          <p className="p-heading--6">
+          <p className="p-heading--6 article-card__info">
             By <a href={article.author.link}>{article.author.name}</a> on {date}
           </p>
-          <hr />
-          <p>{type}</p>
+          <hr className="hr-dotted" />
+          <p className="p-text--small article-card__type">{type}</p>
         </div>
       </div>
     </div>

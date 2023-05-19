@@ -25,7 +25,7 @@ export default function App() {
   }, [fetchArticles]);
 
   return (
-    <main>
+    <main className="u-vertically-center main">
       {articles && !isLoading && !error && <Articles articles={articles} />}
 
       {/* Just making sure I handle loading state and errors - looks ugly. */}

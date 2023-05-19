@@ -2,12 +2,44 @@
 @include vanilla;
 
 $color-brand: #a87ca0;
+$color-link: #007ab1;
+
+a {
+  &:link,
+  &:visited {
+    color: $color-link;
+  }
+}
+
+.main {
+  min-height: 100dvh;
+}
 
 .article-card {
   border-top: 3px solid $color-brand;
+
+  &__category {
+    margin-bottom: 1rem;
+    letter-spacing: -0.02rem;
+  }
+
+  &__heading {
+    font-weight: 400;
+  }
+
+  &__image {
+    border-radius: 3px;
+    margin-top: 0.8rem;
+  }
+
+  &__category,
+  &__info,
+  &__type {
+    font-weight: 300;
+  }
 }
 
-.dotted {
+.hr-dotted {
   border-top: 1px dotted $color-mid-dark;
   background-color: transparent;
 }
