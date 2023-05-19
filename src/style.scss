@@ -1,7 +1,13 @@
 @import "vanilla-framework";
 @include vanilla;
 
-.test {
-  width: 300px;
-  margin: 20px;
+$color-brand: #a87ca0;
+
+.article-card {
+  border-top: 3px solid $color-brand;
+}
+
+.dotted {
+  border-top: 1px dotted $color-mid-dark;
+  background-color: transparent;
 }

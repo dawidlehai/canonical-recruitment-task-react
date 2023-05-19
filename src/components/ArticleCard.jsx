@@ -10,10 +10,10 @@ export default function Card({ article }) {
 
   return (
     <div className="col-4">
-      <div className="p-card">
+      <div className="p-card--highlighted article-card">
         <div className="p-card__content">
           <p>{article.category}</p>
-          <hr />
+          <hr className="dotted" />
           <img
             className="p-card__image"
             alt={article.title}

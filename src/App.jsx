@@ -27,6 +27,8 @@ export default function App() {
   return (
     <main>
       {articles && !isLoading && !error && <Articles articles={articles} />}
+
+      {/* Just making sure I handle loading state and errors - looks ugly. */}
       {isLoading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
     </main>
