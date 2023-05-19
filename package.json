@@ -11,7 +11,6 @@
     "build-css": "sass -w --load-path=node_modules src:src --style=compressed"
   },
   "dependencies": {
-    "@canonical/react-components": "^0.41.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.62.1",
